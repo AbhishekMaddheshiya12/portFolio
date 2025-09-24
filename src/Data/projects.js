@@ -1,12 +1,12 @@
 import chill1 from "../assets/projectImage/ChillZone1.png"
 import chill2 from "../assets/projectImage/ChillZone2.png"
 import chill3 from "../assets/projectImage/ChillZone3.png"
-import blog2 from "../assets/projectImage/Blog2.png"
-import blog3 from "../assets/projectImage/Blog3.png"
-import blog4 from "../assets/projectImage/Blog4.png"
-import code1 from "../assets/projectImage/Code1.png"
-import code2 from "../assets/projectImage/Code2.png"
-import code3 from "../assets/projectImage/Code3.png"
+import blog2 from "../assets/projectImage/blog2.png"
+import blog3 from "../assets/projectImage/blog3.png"
+import blog4 from "../assets/projectImage/blog4.png"
+import code1 from "../assets/projectImage/code1.png"
+import code2 from "../assets/projectImage/code2.png"
+import code3 from "../assets/projectImage/code3.png"
 
 export const projects = [
   {
