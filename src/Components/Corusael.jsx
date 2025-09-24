@@ -8,7 +8,7 @@ function Corusael({images}) {
             Autoplay({
                 delay:5000,
             }),
-        ]} className="bg-slate-100 h-96 rounded-r-xl">
+        ]} className="bg-slate-100 rounded-r-xl">
           <CarouselContent>
             <CarouselItem className="w-full">
               <img src={images[0]} alt="" />

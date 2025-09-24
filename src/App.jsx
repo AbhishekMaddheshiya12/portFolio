@@ -1,5 +1,5 @@
 import React from "react"
-import WelcomePage from "./Pages/WelcomePage"
+import WelcomePage from "./Pages/WelcomePage";
 import { Route, Routes } from "react-router"
 import Skills from "./Pages/Skills"
 import Projects from "./Pages/Projects"
@@ -9,7 +9,8 @@ import Cards from "./Components/Cards"
 function App() {
 
   return (
-    <div className=" w-screen bg-gradient-to-br from-gray-900 to-black">
+<div className="w-screen bg-gradient-to-br from-black via-gray-950 to-black">
+  
       <Routes>
         <Route path="/" element={<WelcomePage />}/>
         <Route path="/skills" element={<Skills />}/>

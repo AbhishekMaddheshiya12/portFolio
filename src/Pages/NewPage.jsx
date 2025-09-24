@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Menu, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
-import NavBar from "@/Components/NavBar";
-import avatar from "../assets/avatar.jpg"
 
 // Floating particles component with subtle blue theme
 const FloatingParticles = () => {
@@ -43,6 +41,7 @@ const CustomTypewriter = () => {
   const texts = [
     "Hi, I'm Abhishek Maddheshiya",
     "Full Stack Developer",
+    "UI/UX Designer"
   ];
 
   useEffect(() => {
@@ -100,30 +99,30 @@ const CustomTypewriter = () => {
 };
 
 // Professional navigation
-// const NavBar = () => {
-//   return (
-//     <nav className="flex justify-between items-center py-8 animate-fade-in">
-//       <div className="text-2xl font-bold text-white tracking-wider">
-//         ABHISHEK MADDHESHIYA
-//       </div>
-//       <div className="hidden md:flex items-center space-x-8">
-//         {['Home', 'About', 'Work', 'Contact'].map((item, index) => (
-//           <a 
-//             key={item}
-//             href="#" 
-//             className="text-gray-300 hover:text-white transition-all duration-300 text-sm font-medium tracking-wide uppercase animate-fade-in"
-//             style={{ animationDelay: `${index * 0.1 + 0.2}s` }}
-//           >
-//             {item}
-//           </a>
-//         ))}
-//       </div>
-//       <div className="md:hidden">
-//         <Menu className="w-6 h-6 text-white" />
-//       </div>
-//     </nav>
-//   );
-// };
+const NavBar = () => {
+  return (
+    <nav className="flex justify-between items-center py-8 animate-fade-in">
+      <div className="text-2xl font-bold text-white tracking-wider">
+        ABHISHEK MADDHESHIYA
+      </div>
+      <div className="hidden md:flex items-center space-x-8">
+        {['Home', 'About', 'Work', 'Contact'].map((item, index) => (
+          <a 
+            key={item}
+            href="#" 
+            className="text-gray-300 hover:text-white transition-all duration-300 text-sm font-medium tracking-wide uppercase animate-fade-in"
+            style={{ animationDelay: `${index * 0.1 + 0.2}s` }}
+          >
+            {item}
+          </a>
+        ))}
+      </div>
+      <div className="md:hidden">
+        <Menu className="w-6 h-6 text-white" />
+      </div>
+    </nav>
+  );
+};
 
 // Professional tagline
 const Tagline = () => {
@@ -147,7 +146,19 @@ const SocialLinks = () => {
 
   return (
     <div className="flex space-x-6 animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
-      
+      {socials.map(({ Icon, label }, index) => (
+        <a
+          key={label}
+          href="#"
+          className="group flex items-center space-x-2 px-4 py-2 border border-gray-600 rounded-full hover:border-blue-400 hover:bg-blue-400/10 transition-all duration-300"
+          style={{ animationDelay: `${index * 0.1 + 1.4}s` }}
+        >
+          <Icon className="w-4 h-4 text-gray-400 group-hover:text-blue-400 transition-colors duration-300" />
+          <span className="text-sm text-gray-300 group-hover:text-white transition-colors duration-300">
+            {label}
+          </span>
+        </a>
+      ))}
     </div>
   );
 };
@@ -172,7 +183,7 @@ function WelcomePage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-800 overflow-hidden">
       {/* Subtle background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-900/10 via-transparent to-slate-900/50"></div>
@@ -205,9 +216,10 @@ function WelcomePage() {
                 <div className="hidden lg:flex justify-center items-center animate-fade-in-right" style={{ animationDelay: '1s' }}>
                   <div className="relative">
                     {/* Placeholder for profile image or graphic */}
-                    <div className=" flex items-center justify-center ml-60">
-                      <img style={{ borderRadius: '10%'}} width={800} height={800} src={avatar}></img>
+                    <div className="w-80 h-80 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-blue-400/20 flex items-center justify-center">
+                      <div className="text-6xl text-blue-400/40">👨‍💻</div>
                     </div>
+                    {/* Floating elements around the main visual */}
                     <div className="absolute -top-4 -right-4 w-8 h-8 bg-blue-400/20 rounded-full animate-ping"></div>
                     <div className="absolute -bottom-6 -left-6 w-12 h-12 border-2 border-blue-400/30 rounded-full animate-pulse"></div>
                   </div>
@@ -217,12 +229,15 @@ function WelcomePage() {
             </div>
           </div>
           
+          {/* Bottom indicator */}
           <div className="pb-8 flex justify-center">
             <div className="animate-fade-in-up" style={{ animationDelay: '1.6s' }}>
               <div className="flex space-x-8 text-sm text-gray-500">
                 <span>Full Stack</span>
                 <span>•</span>
                 <span>React/Node.js</span>
+                <span>•</span>
+                <span>UI/UX Design</span>
               </div>
             </div>
           </div>

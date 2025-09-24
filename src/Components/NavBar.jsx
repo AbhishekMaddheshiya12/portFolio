@@ -16,7 +16,7 @@ function NavBar() {
     setActiveItem(window.location.pathname);
   }, [window.location.pathname]);
   return (
-    <div className="w-100vh">
+    <div className="w-100vh ">
       <div className="flex justify-evenly pt-10">
         <h1
           className="italic text-gray-400 text-5xl hidden md:block"
