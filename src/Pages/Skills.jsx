@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import HighOrderComponet from "../Components/HOC";
 import skill from "../assets/skill.js";
-import SmallCards from "@/Components/SmallCards";
-import PersonalSkills from "@/Data/personalSkills";
+import SmallCards from "../Components/SmallCards.jsx";
+import PersonalSkills from "../Data/personalSkills";
 import { motion } from "framer-motion";
 
 function Skills() {

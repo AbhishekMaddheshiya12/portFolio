@@ -1,6 +1,6 @@
 import React from "react";
 import HighOrderComponet from "../Components/HOC";
-import { Button } from "@/Components/ui/button";
+import { Button } from "../Components/ui/button";
 import { motion } from "framer-motion";
 import pdf from "../Data/Abhishek_Maddheshiya_ATS_Updated.pdf";
 import image from "../assets/ChatGPT Image Sep 24, 2025, 01_04_29 PM.png"

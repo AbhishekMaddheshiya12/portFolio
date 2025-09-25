@@ -1,7 +1,7 @@
 import React from "react";
 import HighOrderComponet from "../Components/HOC";
-import Cards from "@/Components/Cards";
-import { projects } from "@/Data/projects";
+import Cards from "../Components/Cards";
+import { projects } from "../Data/projects";
 
 function Projects() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../Components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
 
 function Corusael({images}) {

@@ -1,5 +1,5 @@
 import React from "react";
-import HighOrderComponet from "../Components/HOC";
+import HighOrderComponet from "../Components/HOC.jsx";
 import { motion } from "framer-motion";
 import {
   Icon,
@@ -11,7 +11,7 @@ import {
   Phone,
   SendIcon,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from '../Components/ui/button.jsx';
 import {
   Card,
   //   CardActions,
